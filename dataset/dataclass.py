@@ -1,6 +1,6 @@
 from sklearn.utils import shuffle
 from sklearn import datasets
-
+import numpy as np
 
 class irisdata():
 
@@ -25,7 +25,7 @@ class irisdata():
         if self.mode == 'test':
             data = data[self.num2:]
             targets = targets[self.num2:]
-        return data[item], targets[item]
+        return data[item].astype(np.float32), targets[item]
 
     def __len__(self):
         if self.mode == 'trainL':

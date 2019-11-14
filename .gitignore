@@ -1,0 +1,6 @@
+.idea/
+.mypy_cache/
+net1.pkl
+net2.pkl
+tensorboard/
+**/*.pyc
